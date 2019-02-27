@@ -25,7 +25,7 @@ pip install -r requirements.txt
 For linux
 ```bash
 git clone https://github.com/deathmojang/dc_auto_write
-pip install selenium configparser setuptools pyvirtual PyVirtualDisplay
+pip install -r requirements.txt
 ```
 get and install google-chrome-stable package from https://www.chrome.com
 
