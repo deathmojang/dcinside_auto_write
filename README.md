@@ -19,14 +19,17 @@ For windows:
 From the repo directory:
 ```bash
 git clone https://github.com/deathmojang/dc_auto_write
-pip install -r requirements.txt
+pip install -r requirements_windows.txt
 ```
 
 For linux
 ```bash
 git clone https://github.com/deathmojang/dc_auto_write
-pip install -r requirements.txt
+pip install -r requirements_linux.txt
 ```
+
+install one of these three backends(Xvfb, Xephyr, Xvnc).
+
 get and install google-chrome-stable package from https://www.chrome.com
 
 download chrome webdriver from https://chromedriver.chromium.org/downloads and put it in the git directory
@@ -46,8 +49,15 @@ content = 내용 (html로 작성) ex) "<p>들어와라</p>"
 
 # start
 파이썬 프로그램 시작
+
+For windows:
 ```bash
-python3 auto_write_dc.py
+python3 auto_write_dc_4_windows.py
+```
+
+For linux:
+```bash
+python3 auto_write_dc_4_linux.py
 ```
 
 # 

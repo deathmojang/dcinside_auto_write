@@ -1,4 +1,4 @@
-# auto_wirte_dc.py 1.0
+# auto_wirte_dc.py 2.0
 #
 # Author : yskim
 # Fork by deathmojang
@@ -29,14 +29,14 @@ gall = Config.get('dc', 'gall')
 title = Config.get('dc', 'title')
 content = Config.get('dc', 'content')
 
-# 리눅스를 위한 가상 디스플레이 드라이버 로드 
-#from pyvirtualdisplay import Display
-#display = Display(visible=0, size=(800, 800))  
-#display.start()
+리눅스를 위한 가상 디스플레이 드라이버 로드 
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(800, 800))  
+display.start()
 
 # 크롬 환경 변수
 options = webdriver.ChromeOptions()
-options.add_argument('headless')
+#options.add_argument('headless')
 options.add_argument('window-size=800x600')
 options.add_argument("disable-gpu")
 
@@ -80,5 +80,5 @@ time.sleep(1)
 #웹페이지 닫기
 driver.close()
 
-#display.sendstop()
-#display.stop()
+display.sendstop()
+display.stop()
